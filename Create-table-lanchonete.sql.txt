@@ -1,5 +1,0 @@
-CREATE TABLE lanchonete (
-  id serial PRIMARY KEY,
-  name text,
-  price numeric,
-);
