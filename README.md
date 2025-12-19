@@ -44,5 +44,4 @@ Pode ser expandido com novas rotas, relacionamento de tabelas e autenticação.
 
 
 
-## 👩‍💻 Autora
-Projeto criado pela Fernanda para estudo de Banco + API + Postman. Projeto-api-sql-lanchonete
+
