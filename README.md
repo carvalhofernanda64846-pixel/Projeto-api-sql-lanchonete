@@ -47,8 +47,8 @@ A ideia é simular um cardápio de uma lanchonete com produtos que podem ser cad
 
 🧪 Teste com valores inválidos Postman/Node.js
 
-Testamos a criação de produtos com preço negativo.  
-O banco Supabase está configurado com uma restrição (`CHECK price > 0`), então:
+ Testamos a criação de produtos com preço negativo.  
+ O banco Supabase está configurado com uma restrição (`CHECK price > 0`), então:
 
 - Tentativa de criar produto com valor negativo `price: -8` → retornou erro 400 no Postman e no Node.js validou que valor negativo não é permitido
 - Resultado esperado: **não aceita valores negativos** ✅
