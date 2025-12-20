@@ -46,6 +46,7 @@ A ideia é simular um cardápio de uma lanchonete com produtos que podem ser cad
 - O script realiza inserção e validação de dados automaticamente no Supabase.
 
 🧪 Teste com valores inválidos Postman/Node.js
+
 Testamos a criação de produtos com preço negativo.  
 O banco Supabase está configurado com uma restrição (`CHECK price > 0`), então:
 
