@@ -26,10 +26,10 @@ A ideia é simular um cardápio de uma lanchonete com produtos que podem ser cad
 2. Configurar a URL base do projeto Supabase
 3. Incluir `apikey e Authorization: Bearer <sua_public_api_key>` nos cabeçalhos
 4. Executar as rotas e validar o retorno no banco:
-   - **GET** → listar registros  
-   - **POST** → criar novos itens  
-   - **PUT** → atualizar preço ou nome  
-   - **DELETE** → remove item por ID
+   - GET → listar registros  
+   - POST → criar novos itens  
+   - PUT → atualizar preço ou nome  
+   - DELETE → remove item por ID
 
 🤖 Automação de testes
 - Abrir a pasta para `/automacao`
