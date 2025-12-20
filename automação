@@ -16,7 +16,7 @@ async function main() {
       { name: 'Açai', price: 30 },
       { name: 'Torta doce', price: 10 },
       { name: 'Torta salgada', price: 10 },
-      { name: 'Cochinha', price: 8 },
+      { name: 'Coxinha', price: 8 },
     ];
 
     // Inserir produtos
