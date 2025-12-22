@@ -67,5 +67,5 @@ Além disso, foi criada uma VIEW SQL (pedidos_completos), que unifica os dados d
 - Nome do cliente
 - Produto comprado
 - Preço do produto
-- Total armazenado no pedido
+- Total armazenado do pedido
 
