@@ -68,4 +68,6 @@ Além disso, foi criada uma VIEW SQL (pedidos_completos), que unifica os dados d
 - Produto comprado
 - Preço do produto
 - Total armazenado do pedido
+  
+  E também foram feitos rotas no postman, para validar a junção das 3 tabelas.
 
