@@ -1,0 +1,5 @@
+CREATE TABLE pedidos (
+  id SERIAL PRIMARY KEY,
+  cliente_id INTEGER REFERENCES clientes(id),
+  total NUMERIC(10,2) CHECK (total > 0)
+);

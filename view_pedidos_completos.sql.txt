@@ -1,0 +1,10 @@
+CREATE VIEW pedidos_completos AS
+SELECT
+  pedidos.id AS pedido,
+  clientes.name AS cliente,
+  lanchonete.produto AS produto,
+  lanchonete.price AS price,
+  pedidos.total AS total_pedido
+FROM pedidos
+JOIN clientes ON pedidos.cliente_id = clientes.id
+JOIN lanchonete ON pedidos.produto_id = lanchonete.id;

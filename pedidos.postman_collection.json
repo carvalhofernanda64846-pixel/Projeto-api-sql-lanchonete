@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "85018f18-f522-4fd4-b6af-1e8fac8b06c4",
+		"name": "pedidos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49991646",
+		"_collection_link": "https://carvalhofernanda64846-8443013.postman.co/workspace/Fernanda-Carvalho's-Workspace~ab28b8f2-c46a-4bef-8b45-3a63f4c9ce67/collection/49991646-85018f18-f522-4fd4-b6af-1e8fac8b06c4?action=share&source=collection_link&creator=49991646"
+	},
+	"item": [
+		{
+			"name": "atualizar parte do pedido",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "sb_publishable_buT2AMz6E8wM4fyUODO5KQ_bUKyIA0D",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer sb_publishable_buT2AMz6E8wM4fyUODO5KQ_bUKyIA0D",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"total\": 32\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sdacfrcawkkpkiwqeyng.supabase.co/rest/v1/pedidos?id=eq.4",
+					"protocol": "https",
+					"host": [
+						"sdacfrcawkkpkiwqeyng",
+						"supabase",
+						"co"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"pedidos"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "eq.4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar pedido por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "sb_publishable_buT2AMz6E8wM4fyUODO5KQ_bUKyIA0D",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer sb_publishable_buT2AMz6E8wM4fyUODO5KQ_bUKyIA0D",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sdacfrcawkkpkiwqeyng.supabase.co/rest/v1/pedidos_completos?pedido=eq.1",
+					"protocol": "https",
+					"host": [
+						"sdacfrcawkkpkiwqeyng",
+						"supabase",
+						"co"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"pedidos_completos"
+					],
+					"query": [
+						{
+							"key": "pedido",
+							"value": "eq.1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar pedido",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "apikey",
+						"value": "sb_publishable_buT2AMz6E8wM4fyUODO5KQ_bUKyIA0D",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer sb_publishable_buT2AMz6E8wM4fyUODO5KQ_bUKyIA0D",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cliente_id\": 2,\r\n  \"produto_id\":6,\r\n  \"total\":8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sdacfrcawkkpkiwqeyng.supabase.co/rest/v1/pedidos",
+					"protocol": "https",
+					"host": [
+						"sdacfrcawkkpkiwqeyng",
+						"supabase",
+						"co"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver pedidos completos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
