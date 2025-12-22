@@ -55,8 +55,8 @@ O banco Supabase está configurado com uma restrição (`CHECK price > 0`), ent�
 
  🔗 Integração entre Tabelas (Clientes + Produtos + Pedidos)
 Nesta evolução do projeto, foram criadas duas novas tabelas no banco (Supabase):
-clientes
-pedidos
+`clientes`
+`pedidos`
 Essas tabelas foram relacionadas à tabela já existente (lanchonete, que contém os produtos).
 Com isso, agora é possível:
 registrar um pedido vinculando cliente + produto
