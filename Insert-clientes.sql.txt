@@ -1,0 +1,7 @@
+INSERT INTO clientes (name) VALUES
+('João Silva'),
+('Maria Souza'),
+('Pedro Henrique'),
+('Ana Clara'),
+('Lucas Ferreira'),
+('Fernanda Teste');
