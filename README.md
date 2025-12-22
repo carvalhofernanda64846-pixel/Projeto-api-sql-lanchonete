@@ -60,8 +60,8 @@ Nesta evolução do projeto, foram criadas duas novas tabelas no banco (Supabase
 Essas tabelas foram relacionadas à tabela já existente (lanchonete, que contém os produtos).
 Com isso, agora é possível:
 registrar um pedido vinculando cliente + produto
-armazenar o valor total do pedido
-consultar pedidos já realizados
+armazenar o valor total do pedido,
+consultar pedidos já realizados.
 Além disso, foi criada uma VIEW SQL (pedidos_completos), que unifica os dados das três tabelas e retorna o pedido completo, incluindo:
 - Número do pedido
 - Nome do cliente
