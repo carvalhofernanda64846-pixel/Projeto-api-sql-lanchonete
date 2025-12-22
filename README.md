@@ -47,8 +47,25 @@ A ideia é simular um cardápio de uma lanchonete com produtos que podem ser cad
 
 🧪 Teste com valores inválidos Postman/Node.js
 
- Testamos a criação de produtos com preço negativo.  
- O banco Supabase está configurado com uma restrição (`CHECK price > 0`), então:
+Testamos a criação de produtos com preço negativo.  
+O banco Supabase está configurado com uma restrição (`CHECK price > 0`), então:
 
-- Tentativa de criar produto com valor negativo `price: -8` → retornou erro 400 no Postman e no Node.js validou que valor negativo não é permitido
+- A tentativa de criar produto com valor negativo `price: -8` → retornou erro 400 no Postman e no Node.js validou que valor negativo não é permitido.
 - Resultado esperado: **não aceita valores negativos** ✅
+
+ 🔗 Integração entre Tabelas (Clientes + Produtos + Pedidos)
+Nesta evolução do projeto, foram criadas duas novas tabelas no banco (Supabase):
+clientes
+pedidos
+Essas tabelas foram relacionadas à tabela já existente (lanchonete, que contém os produtos).
+Com isso, agora é possível:
+registrar um pedido vinculando cliente + produto
+armazenar o valor total do pedido
+consultar pedidos já realizados
+Além disso, foi criada uma VIEW SQL (pedidos_completos), que unifica os dados das três tabelas e retorna o pedido completo, incluindo:
+- Número do pedido
+- Nome do cliente
+- Produto comprado
+- Preço do produto
+- Total armazenado no pedido
+
