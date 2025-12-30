@@ -1,4 +1,4 @@
-name: CI - Testes Lanchonete
+name: CI - Lanchonete
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  testes:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +17,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 18
 
-      - name: Rodar testes
+      - name: Rodar testes da lanchonete
         run: node teste-lanchonete.js
