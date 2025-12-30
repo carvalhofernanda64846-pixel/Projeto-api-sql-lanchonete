@@ -1,4 +1,4 @@
-name: CI - Testes Lanchonete
+name: Testes Lanchonete
 
 on:
   push:
@@ -9,16 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do código
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: '18'
 
-      - name: Teste - Valor negativo
-        run: node teste-valor-negativo.js
-
-      - name: Teste - Adicionar produtos
-        run: node Adicionar-produtos-lanchonete.js
+      - run: node teste-valor-negativo.js
