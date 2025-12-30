@@ -3,8 +3,6 @@ name: CI - Testes Lanchonete
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   test:
@@ -19,5 +17,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Rodar testes da lanchonete
-        run: node teste-lanchonete.js
+      - name: Teste - Valor negativo
+        run: node teste-valor-negativo.js
+
+      - name: Teste - Adicionar produtos
+        run: node Adicionar-produtos-lanchonete.js
