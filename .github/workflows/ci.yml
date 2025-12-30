@@ -1,22 +1,24 @@
-name: Testes Lanchonete
+name: CI - Testes Node
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  test:
+  tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout do código
+      - name: Checkout do repositório
         uses: actions/checkout@v4
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 18
 
-      - name: Rodar teste valor negativo
-        run: node teste-valor-negativo.js
+      - name: Executar testes
+        run: |
+          node teste-valor-negativo.js
