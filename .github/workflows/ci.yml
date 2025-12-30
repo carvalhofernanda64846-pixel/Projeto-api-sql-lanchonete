@@ -1,4 +1,4 @@
-name: CI - Lanchonete
+name: CI - Testes Lanchonete
 
 on:
   push:
